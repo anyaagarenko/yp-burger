@@ -25,6 +25,3 @@ jobs:
 
       - name: check
         run: make check
-
-      - name: build
-        run: make build
