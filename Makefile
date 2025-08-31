@@ -1,3 +1,8 @@
+.PHONY: build
+
+build:
+	npm run build
+
 check:
 	npx prettier . --check
 
