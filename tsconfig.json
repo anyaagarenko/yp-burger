@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
-    "allowJs": true,
     "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": { "src/*": ["src/*"] },
+    "allowJs": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,

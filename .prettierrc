@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    "prettier-plugin-organize-imports",
+    "@trivago/prettier-plugin-sort-imports"
+  ],
+  "importOrder": ["^react", "^[src]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderGroupNamespaceSpecifiers": true
+}
