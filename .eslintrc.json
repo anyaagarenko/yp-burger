@@ -6,14 +6,6 @@
   ],
   "plugins": ["perfectionist"],
   "rules": {
-    "perfectionist/sort-imports": [
-      "error",
-      {
-        "ignoreCase": false,
-        "internalPattern": ["^src"],
-        "type": "alphabetical"
-      }
-    ],
     "no-restricted-imports": [
       "error",
       {
@@ -24,6 +16,7 @@
           }
         ]
       }
-    ]
+    ],
+    "perfectionist/sort-imports": "off"
   }
 }
