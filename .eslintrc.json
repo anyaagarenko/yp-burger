@@ -1,7 +1,19 @@
 {
-  "extends": ["react-app", "react-app/jest"],
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:perfectionist/recommended-alphabetical-legacy"
+  ],
   "plugins": ["perfectionist"],
   "rules": {
+    "perfectionist/sort-imports": [
+      "error",
+      {
+        "ignoreCase": false,
+        "internalPattern": ["^src"],
+        "type": "alphabetical"
+      }
+    ],
     "no-restricted-imports": [
       "error",
       {
