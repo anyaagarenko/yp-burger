@@ -30,4 +30,4 @@ jobs:
         run: make test
 
       - name: build
-        run: build
+        run: make build
