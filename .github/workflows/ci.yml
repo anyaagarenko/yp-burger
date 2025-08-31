@@ -1,0 +1,33 @@
+name: default
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          cache: npm
+          node-version: 24.7.0
+
+      - name: install deps
+        run: npm install
+
+      - name: check
+        run: make check
+
+      - name: test
+        run: make test
+
+      - name: build
+        run: make build
