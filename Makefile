@@ -9,7 +9,10 @@ fmt:
 	npx prettier . --write
 	make fmt-gitignore
 
-mr: fmt check
+mr: fmt check test
 
 run:
 	npm run start
+
+test:
+	npm test -- --watchAll=false
