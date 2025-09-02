@@ -5,6 +5,7 @@ build:
 
 check:
 	npx prettier . --check
+	npx eslint src
 
 fmt-gitignore:
 	sort --output .gitignore .gitignore
@@ -12,6 +13,7 @@ fmt-gitignore:
 
 fmt:
 	npx prettier . --write
+	npx eslint src --fix
 	make fmt-gitignore
 
 mr: fmt check test

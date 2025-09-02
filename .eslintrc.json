@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:perfectionist/recommended-alphabetical-legacy"
+  ],
+  "plugins": ["perfectionist"],
+  "rules": {
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          {
+            "group": ["./", "../"],
+            "message": "Relative imports are not allowed."
+          }
+        ]
+      }
+    ],
+    "perfectionist/sort-imports": "off"
+  }
+}
