@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 
-import App from "src/components/app/app";
+import App from "src/components/app/App";
 
 test("ok", () => {
   render(<App />);
